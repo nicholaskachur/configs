@@ -21,6 +21,20 @@
  alias egrep='egrep --color=auto'              # show differences in colour
  alias fgrep='fgrep --color=auto'              # show differences in colour
 
+# Processes
+ alias pshead='ps aux -1'
+ alias psgrep='ps aux | grep'
+
+# Git
+ alias stat='git status'
+
+# Convenience movements 
+ alias _configs='cd ~/configs'
+ alias _ssh='cd ~/.ssh'
+
+# Utilities
+ alias _resource='source ~/.bashrc'
+
 # Some shortcuts for different directory listings
 # GNU and Darwin/BSD ls use different options for colored output
  if [[ "$(uname)" == "Darwin" ]]; then
@@ -50,7 +64,7 @@
  black="\[\e[0;30m\]"   # Color code for black foreground
  reset="\[\e[0m\]"      # Reset to default color code (e.g. black)
 
- export PS1="$green$user@$host $reset$path $prompt "
+ export PS1="\n\n$green$user@$host $reset$path\n$prompt "
 
 
 ##################################################
