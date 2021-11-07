@@ -56,15 +56,16 @@
 
 # Customize shell prompt
 # Setup some convenience variables
- host="\h"     # e.g. 'tux'
- user="\u"     # e.g. 'nkachur'
+ host="\h"     # e.g. 'escape'
+ user="\u"     # e.g. 'kolya'
  path="\w"     # e.g. '~/configs'
  prompt="\$"   # display '#' if root, otherwise display '$'
  green="\[\e[0;32m\]"   # Color code for green foreground
+ yellow="\[\e[0;33m\]"   # Color code for yellow foreground
  black="\[\e[0;30m\]"   # Color code for black foreground
  reset="\[\e[0m\]"      # Reset to default color code (e.g. black)
 
- export PS1="\n\n$green$user@$host $reset$path\n$prompt "
+ export PS1="\n\n$green$user@$host $yellow$path\n$reset$prompt "
 
 
 ##################################################
