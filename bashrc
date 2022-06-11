@@ -8,9 +8,18 @@
  export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 
 ### Aliases
+# Easy environment refresh.
+ alias _resource='source ~/.bashrc && echo Resourced.'
+ alias _refresh='source ~/.bashrc && echo Refreshed.'
+
+# Convenience movements
+ alias _configs='pushd ~/configs'
+ alias _ssh='pushd ~/.ssh'
+
 # Default to human readable figures
  alias df='df -h'
  alias du='du -h'
+ alias ls='ls -h'
 
 # Pagers
  alias less='less -r'                          # raw control characters
@@ -23,17 +32,11 @@
 
 # Processes
  alias pshead='ps aux -1'
- alias psgrep='ps aux | grep'
+ alias psgrep='pshead && ps aux | grep'
 
 # Git
- alias stat='git status'
+ alias gs='git status'
 
-# Convenience movements 
- alias _configs='cd ~/configs'
- alias _ssh='cd ~/.ssh'
-
-# Utilities
- alias _resource='source ~/.bashrc'
 
 # Some shortcuts for different directory listings
 # GNU and Darwin/BSD ls use different options for colored output
