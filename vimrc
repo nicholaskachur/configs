@@ -33,7 +33,7 @@
     set showcmd " show previous command in the bottom bar
     set cmdheight=2 " set command menu height to two rows
     set confirm " when '!' is not supplied, ask for confirmation if necessary
-    set colorcolumn=71,78,79 " Add color down columns 72 (for docstrings) and 80 (for code)
+    set colorcolumn=71,72,87,88 " Add color down columns 72 (for docstrings) and 88 (for code)
     hi ColorColumn ctermbg=236
     set cursorline " highlight current line, doesn't always work properly
     set wildmenu " visual autocomplete for cmd menu
@@ -41,7 +41,7 @@
     set backspace=eol,start,indent " backspace key works on eol, start of line, and tabs
     set whichwrap+=<,>,h,l " allow h, l, and left/right to move to next line
     set nowrap " no line wrapping
-    set textwidth=80 " set text width for when we do want automagic wrapping (structured text)
+    set textwidth=88 " set text width for when we do want automagic wrapping (structured text)
     set encoding=utf8 " use UTF-8 standard encoding
 " }}}
 

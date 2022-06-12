@@ -34,8 +34,9 @@
  alias pshead='ps aux -1'
  alias psgrep='pshead && ps aux | grep'
 
-# Git
+# Development
  alias gs='git status'
+ alias python='python3'
 
 
 # Some shortcuts for different directory listings
