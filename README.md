@@ -1,5 +1,6 @@
-These are the dot files, of the starship Nicholas.
+These are my dotfiles.
 
-There's nothing terribly fancy in here for now, just slightly modified versions of Cygwin's default bashrc, my tmux.conf, and a decent vimrc. Feel free to borrow anything useful, and get in touch if it breaks!
+If there's anything here you find helpful, feel free to try it, just
+be careful not to break your system, okay?
 
-NOTE: All the files in this repository are dotfiles, so you'll have to use 'ls -a' to view them all.
+_-Nicholas_
