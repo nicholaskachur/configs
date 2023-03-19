@@ -3,10 +3,11 @@
 # Setup symlinks for home directory (if required)
 
 main() {
+    echo "DEPRECATION WARNING: This script is out-of-date, and may not work correctly."
     config_dir=$(dirname $0)
 
     for file in $(ls $config_dir); do
-        if [[ "$file" == "README.md" || "$file" == "LICENSE" || "$file" == "setup_configs.sh" ]]; then
+        if [[ "$file" == "README.md" || "$file" == "LICENSE" || "$file" == "setup_configs.sh" ||  "$file" == "archive" ]]; then
             # Skip Readme, License, and this script (;
             continue
         else
