@@ -1,8 +1,8 @@
-" Nick Kachur <nkachur@drexel.edu>
+" Nicholas Kachur <nick.e.kachur@gmail.com>
 
 " Vundle (Plugin Management) {{{
-    " Activate Vundle config
-    source ~/.vim/bundles.vim
+    " Deprecated: activate Vundle config
+    " source ~/.vim/bundles.vim
 " }}}
 
 " Basics {{{
