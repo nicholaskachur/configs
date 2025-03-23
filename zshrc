@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="kolya"
+ZSH_THEME="kolya-mac"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,9 +101,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
- alias _refresh="source ~/.zshrc"
- alias _resource="source ~/.zshrc"
+ alias _refresh="source ~/.zshrc && echo 'Refreshed.'"
+ alias _reload="source ~/.zshrc && echo 'Reloaded.'"
+ alias _resource="source ~/.zshrc && echo 'Resourced.'"
+ alias ..="cd .."
+ alias gs="git status"
  alias pshead="ps aux | head -1"
  alias psgrep="pshead && ps aux | grep"
- alias gs="git status"
- alias ..="cd .."
+ alias python="python3"
+
+# Setup homebrew environment.
+ eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Setup 1Password SSH Agent
+ export SSH_AUTH_SOCK="~/.1password/agent.sock"
