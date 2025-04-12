@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
  alias gs="git status"
  alias pshead="ps aux | head -1"
  alias psgrep="pshead && ps aux | grep"
- alias python="python3"
+ alias python="python3.13"
 
 # Setup homebrew environment.
  eval "$(/opt/homebrew/bin/brew shellenv)"
