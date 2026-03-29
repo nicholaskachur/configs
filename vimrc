@@ -1,5 +1,12 @@
 " Nicholas Kachur <nick.e.kachur@gmail.com>
 
+" Utterly Terrible Hack {{{
+"   Starting in 2025, the following built-in script is wreaking havoc
+"   on my colorschemes and colorcolumns setup:
+"   /usr/share/vim/vim91/plugin/colorresp.vim
+    let g:loaded_colorresp = 1
+" }}}
+
 " Vundle (Plugin Management) {{{
     " Deprecated: activate Vundle config
     " source ~/.vim/bundles.vim
